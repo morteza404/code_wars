@@ -1,16 +1,19 @@
 """
-     *
-    ***
-   *****
-  ******* 
- *********
-***********
+    author : morteza
+    description : drawing below shape !
+
+               *  
+              ***
+             *****
+            *******
 
 """
 
-out = []
+# n is number of rows
+def draw(n):
+    for i in range(n):
+        print( " " * ( n - (i + 1))  +  "*" * ( 2 * i + 1))
 
-for i in range(6):
-    for j in range(11):
-        out[i][(j//2)+1] = "*"
-print(out)
+if __name__ == "__main__":
+    # print(__doc__)
+    draw(6)
